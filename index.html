@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Minesweeper</title>
+	<link rel="icon" href="./icon.svg"></style>
+	<link rel="stylesheet" href="./style.css"></style>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="top-bar">
+		<div id="score-container">
+			<div id="score">
+				<div id="wins">
+					<div>WINS</div>
+					<div id="win-count" class="score">0</div>
+				</div>
+				<div id="losses">
+					<div>LOSSES</div>
+					<div id="loss-count" class="score">0</div>
+				</div>
+			</div>
+			<div id="mode">CUSTOM</div>
+		</div>
+		<div id="reload"></div>
+	</div>
+	<div id="mine-board-container">
+		<div id="mine-board"></div>
+	</div>
+	<div id="bottom-bar">
+		<div id="bottom-bar-contents">
+			<div id="game-status">You XYZ!</div>
+			<div id="info">
+				<div id="remaining-mines">
+					<img src="./mine.svg" alt="M">
+					<div>0</div>
+				</div>
+				<div id="flags">
+					<img src="./flag.svg" alt="F">
+					<div>0</div>
+				</div>
+			</div>
+			<div id="current-input">
+				<div id="selection" primary="dig"></div>
+				<div id="dig"><img src="./dig.svg" alt="D"></div>
+				<div id="flag"><img src="./flag.svg" alt="F"></div>
+			</div>
+			<div id="mode-select">
+				<div id="easy">EASY</div>
+				<div id="medium">MEDIUM</div>
+				<div id="hard">HARD</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+<script type="text/javascript" src="./script.js"></script>
+</html>
