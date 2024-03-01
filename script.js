@@ -47,7 +47,6 @@ function init() {
 			tile.num = 0;
 			tile.flag = 0;
 			document.querySelector("#mine-board").appendChild(tile);
-			document.querySelector("#mine-board").style["grid-template-columns"] = "repeat(" + board_width + ", auto)";
 
 			if (mine_primary) {
 				tile.addEventListener("click", reveal);
